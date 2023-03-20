@@ -55,6 +55,7 @@ function clickedFunction(operator) {
         functionText.value = operator;
         currentNum = 0;
         inputText.value = "";
+        resultText.value = "";
     }
 }
 
