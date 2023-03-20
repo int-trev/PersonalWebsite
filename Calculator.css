@@ -26,10 +26,10 @@
   background-color: grey;
 }
 
-@media (max-width: 412px) {
+@media screen and (max-width: 440px) {
   .calculatoroverall{
-    height: 350px;
-    width:400px;
+    height: 300px;
+    width:300px;
     background-color: grey;
   }
 }
