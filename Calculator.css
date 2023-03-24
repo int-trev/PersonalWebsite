@@ -20,17 +20,19 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 440px) {
+@media screen {
   .calculatoroverall{
-    height: 300px;
-    width:300px;
+    height: 700px;
+    width:800px;
     background-color: grey;
   }
 }
 
-.calculatoroverall{
-  height: 700px;
-  width:800px;
-  background-color: grey;
+@media screen and (max-width: 440px) {
+  .calculatoroverall{
+    height:80%;
+    width:80%;
+    background-color: grey;
+  }
 }
 
