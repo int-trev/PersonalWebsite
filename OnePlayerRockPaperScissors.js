@@ -25,7 +25,7 @@ function MakeChoice(choice)
 
 function ComputerSelection()
 {
-    var ComputerIntegerSelection = Math.floor(Math.random * 3);
+    var ComputerIntegerSelection = Math.floor(Math.random() * 3);
     MapSelection(ComputerIntegerSelection);
 }
 
