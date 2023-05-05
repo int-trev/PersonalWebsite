@@ -9,13 +9,27 @@ var incorrectGuesses = 0;
 var guessedWords = Array(26).fill(0);
 var wordBank;
 
+let options = {
+    method: "GET",
+    headers: {
+        'Content-Type':"application/json;charset=utf-8"
+    }
+}
+
+console.log("HI");
+OnLoad();
+
 
 function OnLoad()
 {
     //load all the words from the data into an array
-    fetch('./Data/WordBank.json')
+    fetch('https://int-trev.github.io/PersonalWebsite/Data/WordBank.json', options)
     .then((response) => response.json())
-    .then((json) => wordBank=json.words)
+    .then((json) => function() {
+        wordBank=json.words;
+        console.log("hi");
+        console.log(wordBank);
+    })
 }
 
 function Start()
